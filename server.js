@@ -22,20 +22,21 @@ connectDB();
 
 
 //sessões e flash
+
 const sessionOptions = session({
     secret: process.env.SESSION_SECRET,
-    store: MongoStore.create({ mongoUrl: process.env.CONNECTIONSTRING }),
+    store: MongoStore.create({
+        mongoUrl: process.env.CONNECTIONSTRING, // Ou process.env.MONGO_URI, dependendo de como está configurado
+        mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true }
+    }),
     resave: false,
     saveUninitialized: false,
     cookie: {
-        maxAge: 1000 * 60 * 60 * 24 * 7,
+        maxAge: 1000 * 60 * 60 * 24 * 7, // 7 dias
         httpOnly: true
-    },
-    store: MongoStore.create({
-        mongoUrl: process.env.MONGO_URI, // A URL do MongoDB
-        mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true }
-      })
+    }
 });
+
 const routes = require('./routes');
 app.use(sessionOptions);
 app.use(flash());

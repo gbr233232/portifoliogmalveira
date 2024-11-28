@@ -6,14 +6,12 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
 const app = express();
+const port = process.env.PORT || 1414;
 
 //conexão mongoDB
 async function connectDB() {
     try{
-        await mongoose.connect(process.env.MONGO_URI, { 
-            useNewUrlParser: true, 
-            useUnifiedTopology: true 
-        });
+        await mongoose.connect(process.env.MONGO_URI);
         console.log('Conectado á base de dados')
         app.emit('pronto');
     }catch(err) {
@@ -49,6 +47,6 @@ app.set('view engine', 'ejs');
 
 app.use('/frontend', express.static(path.join(__dirname, 'frontend')));
 app.use(routes)
-app.listen(1414, () => {
+app.listen(port, () => {
     console.log('Servidor executando porta 1414')
 });

@@ -20,54 +20,42 @@
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Leve sombra */
     }
     .timeline {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      margin: 2rem 0;
-    }
-    .timeline::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background-color: #ddd;
-      z-index: 1;
-    }
-    .timeline-item {
-      position: relative;
-      text-align: center;
-      flex: 1;
-      padding: 0 1rem;
-    }
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 12px;
-      height: 12px;
-      background-color: #fff;
-      border: 4px solid #007bff;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-    }
-    .timeline-item h5 {
-      margin-top: 1rem;
-      color: #007bff;
-      font-size: 1.2rem;
-    }
-    .timeline-item p {
-      margin-top: 0.5rem;
-      color: #666;
-      font-size: 0.9rem;
-      max-width: 150px; /* Limite de largura do texto */
-      margin-left: auto;
-      margin-right: auto;
-    }
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item h5 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.timeline-description {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #3498db; /* Linha da timeline */
+}
+
+.timeline-description p {
+  font-size: 1em;
+  color: #555;
+  margin: 0;
+}
+
   </style>
 </head>
 <body>
@@ -151,7 +139,7 @@
   </div>
 
   
-  <div class="container text-center mt-4 mb-5 pb-2">
+  <div class="container-fluid text-center mt-4 mb-5 pb-2">
     <div class="row justify-content-center">
       <div class="col-md-9">
         <div class="accordion" id="topicos">
@@ -169,30 +157,37 @@
                         <p class="text-center text-muted mb-4">Profissional e Acadêmica</p>
                     
                         <div class="timeline">
-                          <div class="timeline-item pt-4">
+                          <div class="timeline-item ">
                             <h5>2019 - 2021</h5>
-                            <div class="pt-3">
-                                <p>Técnico de TI (EEEP) - MaxWorld</p>
+                            <div class="">
+                                <p>Técnico de TI - EEEP Maria Dolores Alcântara e Silva</p>
                             </div>
                           </div>
 
-                          <div class="timeline-item pt-4">
+                          <div class="timeline-item ">
+                            <h5>2021 - 2022</h5>
+                            <div class="">
+                                <p>Estagiário TI - Max World</p>
+                            </div>
+                          </div>
+
+                          <div class="timeline-item">
                             <h5>2022 - 2023</h5>
-                            <div class="pt-3">
+                            <div class="">
                               <p>Aprendiz Aux. de T.I - Vectra Work</p>
                             </div>
                           </div>
 
-                          <div class="timeline-item pt-4">
+                          <div class="timeline-item ">
                             <h5>2023 - 2024</h5>
-                            <div class="pt-3">
+                            <div class="">
                               <p>Estagiário Analista de Sistemas - Fornecedora</p>
                             </div>
                           </div>
 
-                          <div class="timeline-item pt-5">
+                          <div class="timeline-item ">
                             <h5>2025</h5>
-                            <div class="pt-2">
+                            <div class="">
                               <p>Análise de Desenvolvimento de Sistemas(2022) - Unifor</p>
                             </div>
                           </div>

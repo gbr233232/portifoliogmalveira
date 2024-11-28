@@ -42,5 +42,5 @@ app.set('view engine', 'ejs');
 app.use('/frontend', express.static(path.join(__dirname, 'frontend')));
 app.use(routes)
 app.listen(1414, () => {
-    console.log('Servidor executando porta 3333')
+    console.log('Servidor executando porta 1414')
 });

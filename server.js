@@ -26,7 +26,7 @@ connectDB();
 const sessionOptions = session({
     secret: process.env.SESSION_SECRET,
     store: MongoStore.create({
-        mongoUrl: process.env.CONNECTIONSTRING, // Ou process.env.MONGO_URI, dependendo de como está configurado
+        mongoUrl: process.env.MONGO_URI, // Ou process.env.MONGO_URI, dependendo de como está configurado
         mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true }
     }),
     resave: false,

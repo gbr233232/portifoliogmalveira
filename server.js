@@ -6,7 +6,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
 const app = express();
-const port = process.env.PORT || 1414;
+const port = process.env.PORT;
 
 //conexão mongoDB
 async function connectDB() {
@@ -28,7 +28,7 @@ const sessionOptions = session({
     secret: process.env.SESSION_SECRET,
     store: MongoStore.create({
         mongoUrl: process.env.MONGO_URI, // Ou process.env.MONGO_URI, dependendo de como está configurado
-        mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true }
+
     }),
     resave: false,
     saveUninitialized: false,
@@ -48,5 +48,6 @@ app.set('view engine', 'ejs');
 app.use('/frontend', express.static(path.join(__dirname, 'frontend')));
 app.use(routes)
 app.listen(port, () => {
-    console.log('Servidor executando porta 1414')
+    console.log(`Servidor executando na porta ${process.env.PORT || 1414}`);
+
 });

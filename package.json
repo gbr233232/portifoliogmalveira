@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "webpack --mode development"
+    "build": "echo 'No build step needed' && exit 0"
+
   },
   "keywords": [],
   "author": "",

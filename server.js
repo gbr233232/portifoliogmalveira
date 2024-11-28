@@ -30,7 +30,11 @@ const sessionOptions = session({
     cookie: {
         maxAge: 1000 * 60 * 60 * 24 * 7,
         httpOnly: true
-    }
+    },
+    store: MongoStore.create({
+        mongoUrl: process.env.MONGO_URI, // A URL do MongoDB
+        mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true }
+      })
 });
 const routes = require('./routes');
 app.use(sessionOptions);

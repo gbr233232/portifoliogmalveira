@@ -10,7 +10,7 @@ const app = express();
 //conexão mongoDB
 async function connectDB() {
     try{
-        await mongoose.connect(process.env.CONNECTIONSTRING);
+        await mongoose.connect(process.env.MONGO_URI);
         console.log('Conectado á base de dados')
         app.emit('pronto');
     }catch(err) {

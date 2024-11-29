@@ -55,6 +55,18 @@
   color: #555;
   margin: 0;
 }
+.card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .card-body a {
+    text-decoration: none;
+  }
+  .card-body a:hover {
+    text-decoration: underline;
+  }
 
   </style>
 </head>
@@ -280,35 +292,27 @@
                   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <!-- Projeto 1 -->
                     <div class="col">
-                      <div class="card h-100">
-                        <img src="caminho-da-imagem1.jpg" class="card-img-top" alt="Projeto 1">
+                      <div class="card h-100 shadow-lg">
                         <div class="card-body">
-                          <h5 class="card-title">Projeto 1</h5>
-                          <p class="card-text">Descrição do projeto 1. Aqui você pode adicionar detalhes sobre o que foi feito, as tecnologias usadas, e o impacto do projeto.</p>
+                          <h5 class="card-title">Max Fit Academia</h5>
+                          <a href="https://github.com/gbr233232/MaxFit.git" target="_blank" rel="noopener noreferrer">
+                            <p class="card-text text-muted">Neste link será disponibilizado o repositório do projeto</p>
+                          </a>
                         </div>
                       </div>
                     </div>
                     <!-- Projeto 2 -->
                     <div class="col">
-                      <div class="card h-100">
-                        <img src="caminho-da-imagem2.jpg" class="card-img-top" alt="Projeto 2">
+                      <div class="card h-100 shadow-lg">
                         <div class="card-body">
-                          <h5 class="card-title">Projeto 2</h5>
-                          <p class="card-text">Descrição do projeto 2. Detalhes sobre como você contribuiu para o projeto, as soluções encontradas e os resultados.</p>
+                          <h5 class="card-title">Agenda</h5>
+                          <a href="https://github.com/gbr233232/Agenda.git" target="_blank" rel="noopener noreferrer">
+                            <p class="card-text text-muted">Neste link será disponibilizado o repositório do projeto</p>
+                          </a>
                         </div>
                       </div>
                     </div>
-                    <!-- Projeto 3 -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="caminho-da-imagem3.jpg" class="card-img-top" alt="Projeto 3">
-                        <div class="card-body">
-                          <h5 class="card-title">Projeto 3</h5>
-                          <p class="card-text">Descrição do projeto 3. Explicações sobre o impacto, desafios superados e inovações implementadas.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Adicionar mais projetos conforme necessário -->
+
                   </div>
                 </div>
               </div>

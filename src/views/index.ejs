@@ -12,10 +12,18 @@
 
   <style>
     body {
-      background-color: #f2efee;
+      background-color: #353535;
     }
     .shadow-nav {
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Leve sombra */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Leve sombra */
+    }
+    .blocos {
+      padding-top: 15px;
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+      box-shadow: 0px 4px 6px 6px rgba(0, 0, 0, 0.2);; /* Leve sombra */
+      border-radius: 10px;
     }
     .timeline {
   position: relative;
@@ -68,9 +76,9 @@
 
   </style>
 </head>
-<body>
+<body class="text-light">
   <div class="shadow-nav">
-      <nav class="navbar navbar-expand-lg  container">
+      <nav class="navbar navbar-expand-md  container">
 
           <div class="container-fluid">
 
@@ -109,21 +117,19 @@
 
 
   <div >
-      <div class="container mt-2 ">
-          <div class="row justify-content-center align-items-center profile-section">
+      <div class=" mt-2 ">
+          <div class="row justify-content-center align-items-start profile-section">
             
-            <div class="col-md-4 text-center">
-              <img src="../../frontend/assets/img/foto.jpeg" class="img-fluid" width="300px" style="border-radius: 300px;">
-              
-            </div>
+            <div class="col-lg-4 blocos">
+              <div class="text-center">
+                <img src="../../frontend/assets/img/foto.jpg" class="img-fluid" width="200px" style="border-radius: 300px;">
+                <p class="mt-3 info-title"><img src="../../frontend/assets/img/gabriel_malveira_foto.png" class="img-fluid" width="250px"></p>
+              </div>
             
-            
-            <div class="col-md-6">
-              <p class="mt-3 info-title"><img src="../../frontend/assets/img/gabriel_malveira_foto.png" class="img-fluid" width="350px"></p>
-              <h4 class="">Back-End Developer</h4>
+              <h2>Full-Stack</h2>
   
-              <p>Com uma base sólida em suporte e análise de TI, estou focando no desenvolvimento de software, transformando ideias em soluções inovadoras. Minhas experiências fortaleceram a habilidade de resolver problemas complexos e trabalhar estrategicamente em equipe. Contudo, é na criação e integração de sistemas que encontro meu propósito, unindo técnica e criatividade para alcançar resultados impactantes.</p>
-              <h3 class="info-title mt-4">Detalhes de Contato</h3>
+
+
               <ul class="list-unstyled">
                   <li>
                     <strong><i class="fas fa-envelope "></i> E-mail: </strong> 
@@ -139,8 +145,182 @@
                       <strong><i class="fab fa-github"></i> GitHub: </strong> 
                       <a href="https://github.com/gbr233232" target="_blank">/gbr233232</a>
                   </li>
+
+                  <li>
+                    <strong><i class="fab fa-whatsapp"></i> Whatsapp: </strong> 
+                    <a href="https://api.whatsapp.com/send?phone=5585992367392&text=Ol%C3%A1,%20acabei%20de%20ver%20seu%20port%C3%B3flio!" target="_blank">Clique aqui</a>
+                </li>
                   
               </ul>
+              
+            </div>
+            
+            
+            <div class="col-lg-3 text-center blocos" style="padding-top: 20px; padding-bottom: 19px;">
+              
+              
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#hard" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><h4>Hard Skills</h4></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#soft" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><h4>Soft Skills</h4></button>
+                  </li>
+
+
+                </ul>
+
+                <!--experiencia-->
+                <div class="tab-content mt-2" id="myTabContent">
+                  <div class="tab-pane fade show active" id="hard" role="tabpanel" aria-labelledby="home-tab" tabindex="0">    
+
+                    <ul class="list-unstyled">
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fab fa-js-square fa-3x me-3 text-warning"></i>
+                        <span>JavaScript</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fab fa-node fa-3x me-3 text-success"></i>
+                        <span>Node.js</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fab fa-html5 fa-3x me-3 text-danger"></i>
+                        <span>HTML</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fab fa-css3-alt fa-3x me-3 text-primary"></i>
+                        <span>CSS</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fas fa-database fa-3x me-3 text-info"></i>
+                        <span>SQL</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fab fa-react fa-3x me-3 text-info"></i>
+                        <span>React.js</span>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <!--profissional-->
+                  <div class="tab-pane fade" id="soft" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><div class="timeline">
+                    <ul class="list-unstyled">
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fas fa-users fa-3x me-3 text-secondary"></i>
+                        <span>Comunicação</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fas fa-lightbulb fa-3x me-3 text-warning"></i>
+                        <span>Criatividade</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fas fa-briefcase fa-3x me-3 text-success"></i>
+                        <span>Gestão de Tempo</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fas fa-cogs fa-3x me-3 text-info"></i>
+                        <span>Adaptabilidade</span>
+                      </li>
+                      <li class="d-flex align-items-center mb-3">
+                        <i class="fas fa-handshake fa-3x me-3 text-primary"></i>
+                        <span>Trabalho em Equipe</span>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                </div>
+
+           
+
+              
+            </div>
+
+            <div class="col-lg-4 text-center blocos" style="padding-top: 22px; padding-bottom: 22px;">
+
+                <h1>Experiência</h1>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Profissional</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Acadêmica</button>
+                  </li>
+
+
+                </ul>
+
+                <!--experiencia-->
+                <div class="tab-content mt-2" id="myTabContent">
+                  <div class="tab-pane fade " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">    
+                    <!--academica-->                    
+                    <div class="timeline">
+                    <div class="timeline-item ">
+                      <h5>Jan/2019 - Dez/2021</h5>
+                      <div class="">
+                          <p>Técnico de TI - EEEP Maria Dolores Alcântara e Silva</p>
+                      </div>
+                    </div>
+
+
+
+                    <div class="timeline-item">
+                      <h5>Abr/2022 - Jun/2023</h5>
+                      <div class="">
+                        <p>Aprendiz Aux. TI. - IEP Pacajus</p>
+                      </div>
+                    </div>
+
+
+
+                    <div class="timeline-item ">
+                      <h5>Ago/2022 - Dez/2025</h5>
+                      <div class="">
+                        <p>Análise de Desenvolvimento de Sistemas - Unifor</p>
+                      </div>
+                    </div>
+                  </div></div>
+                  <!--profissional-->
+                  <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><div class="timeline">
+                    <div class="timeline-item ">
+                      <h5>Out/2021 - Fev/2022</h5>
+                      <div class="">
+                          <p>Técnico de TI - MaxWorld</p>
+                          <p><a href="#">Ver mais</a></p>
+                      </div>
+                    </div>
+
+
+
+                    <div class="timeline-item ">
+                      <h5>Abr/2022 - Jun/2023</h5>
+                      <div class="">
+                          <p>Aprendiz Aux. TI. - Vectra Work</p>
+                          <p><a href="#">Ver mais</a></p>
+                      </div>
+                    </div>
+
+
+
+                    <div class="timeline-item ">
+                      <h5>Ago/2023 - Nov/2024</h5>
+                      <div class="">
+                          <p>Estagiário Analista de Sistemas - Grupo Fornecedora</p>
+                          <p><a href="#">Ver mais</a></p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+
+                </div>
+
+             
+
               
             </div>
   
@@ -148,179 +328,7 @@
       </div>
   </div>
 
-  
-  <div class="container-fluid text-center mt-4 mb-5 pb-2">
-    <div class="row justify-content-center">
-      <div class="col-md-9">
-        <div class="accordion" id="topicos">
-            <!-- Tópico 1 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="topico1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo1" aria-expanded="false" aria-controls="conteudo1">
-                  <strong>Minha Trajetória</strong>
-                </button>
-              </h2>
-              <div id="conteudo1" class="accordion-collapse collapse" data-bs-parent="#topicos">
-                <div class="accordion-body">
-                    <div class="container">
-                        <h2 class="text-center mt-5 mb-4">Trajetória</h2>
-                        <p class="text-center text-muted mb-4">Profissional e Acadêmica</p>
-                    
-                        <div class="timeline">
-                          <div class="timeline-item ">
-                            <h5>2019 - 2021</h5>
-                            <div class="">
-                                <p>Técnico de TI - EEEP Maria Dolores Alcântara e Silva</p>
-                            </div>
-                          </div>
 
-                          <div class="timeline-item ">
-                            <h5>2021 - 2022</h5>
-                            <div class="">
-                                <p>Estagiário TI - Max World</p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item">
-                            <h5>2022 - 2023</h5>
-                            <div class="">
-                              <p>Aprendiz Aux. de T.I - Vectra Work</p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item ">
-                            <h5>2023 - 2024</h5>
-                            <div class="">
-                              <p>Estagiário Analista de Sistemas - Fornecedora</p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item ">
-                            <h5>2025</h5>
-                            <div class="">
-                              <p>Tecnólogo Análise de Desenvolvimento de Sistemas(2022) - Unifor</p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="topico2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo2" aria-expanded="false" aria-controls="conteudo2">
-                  <strong>Skills</strong>
-                </button>
-              </h2>
-              <div id="conteudo2" class="accordion-collapse collapse" data-bs-parent="#topicos">
-                <div class="accordion-body">
-                  <div class="row">
-                    
-                    <div class="col-md-6">
-                      <h4 class="mb-4 text-primary">Hard Skills</h4>
-                      <ul class="list-unstyled">
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fab fa-js-square fa-3x me-3 text-warning"></i>
-                          <span>JavaScript</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fab fa-node fa-3x me-3 text-success"></i>
-                          <span>Node.js</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fab fa-html5 fa-3x me-3 text-danger"></i>
-                          <span>HTML</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fab fa-css3-alt fa-3x me-3 text-primary"></i>
-                          <span>CSS</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fas fa-database fa-3x me-3 text-info"></i>
-                          <span>SQL</span>
-                        </li>
-                      </ul>
-                    </div>
-            
-                    
-                    <div class="col-md-6">
-                      <h4 class="mb-4 text-primary">Soft Skills</h4>
-                      <ul class="list-unstyled">
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fas fa-users fa-3x me-3 text-secondary"></i>
-                          <span>Comunicação</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fas fa-lightbulb fa-3x me-3 text-warning"></i>
-                          <span>Criatividade</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fas fa-briefcase fa-3x me-3 text-success"></i>
-                          <span>Gestão de Tempo</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fas fa-cogs fa-3x me-3 text-info"></i>
-                          <span>Adaptabilidade</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                          <i class="fas fa-handshake fa-3x me-3 text-primary"></i>
-                          <span>Trabalho em Equipe</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="topico3">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo3" aria-expanded="false" aria-controls="conteudo3">
-                  <strong>Projetos</strong>
-                </button>
-              </h2>
-              <div id="conteudo3" class="accordion-collapse collapse" data-bs-parent="#topicos">
-                <div class="accordion-body">
-                  <!-- Lista de Projetos -->
-                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <!-- Projeto 1 -->
-                    <div class="col">
-                      <div class="card h-100 shadow-lg">
-                        <div class="card-body">
-                          <h5 class="card-title">Max Fit Academia</h5>
-                          <a href="https://github.com/gbr233232/MaxFit.git" target="_blank" rel="noopener noreferrer">
-                            <p class="card-text text-muted">Neste link será disponibilizado o repositório do projeto</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Projeto 2 -->
-                    <div class="col">
-                      <div class="card h-100 shadow-lg">
-                        <div class="card-body">
-                          <h5 class="card-title">Agenda</h5>
-                          <a href="https://github.com/gbr233232/Agenda.git" target="_blank" rel="noopener noreferrer">
-                            <p class="card-text text-muted">Neste link será disponibilizado o repositório do projeto</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
